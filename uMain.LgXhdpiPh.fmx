@@ -1,0 +1,56 @@
+inherited frmMain_LgXhdpiPh: TfrmMain_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited TopToolBar: TToolBar
+    Size.Width = 450.000000000000000000
+    inherited ToolBarLabel: TLabel
+      Size.Width = 450.000000000000000000
+    end
+  end
+  inherited TabControl1: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 599.000000000000000000
+    Sizes = (
+      450s
+      599s
+      450s
+      599s)
+    inherited TabItem1: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited btnSala1: TButton
+        Size.Width = 403.000000000000000000
+      end
+      inherited btnSala2: TButton
+        Size.Width = 403.000000000000000000
+      end
+      inherited btnSala3: TButton
+        Size.Width = 403.000000000000000000
+      end
+    end
+    inherited TabItem2: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited lbChat: TListBox
+        Size.Width = 403.000000000000000000
+        Viewport.Width = 403.000000000000000000
+        Viewport.Height = 329.000000000000000000
+      end
+      inherited btnEnviar: TButton
+        Size.Width = 139.000000000000000000
+      end
+    end
+  end
+  inherited BottomToolBar: TToolBar
+    Position.Y = 647.000000000000000000
+    Size.Width = 450.000000000000000000
+    inherited lblStatus: TLabel
+      Size.Width = 450.000000000000000000
+    end
+  end
+  inherited ActionList: TActionList
+    Left = 208
+    Top = 88
+  end
+end

@@ -1,0 +1,208 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Delphi Chat MQTT'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 3
+  object TopToolBar: TToolBar
+    Anchors = []
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ToolBarLabel: TLabel
+      Action = TitleAction
+      Align = Contents
+      Enabled = True
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Delphi Chat MQTT'
+    end
+    object btnBack: TSpeedButton
+      Align = MostLeft
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      Text = 'Sair'
+      Visible = False
+      OnClick = btnBackClick
+    end
+  end
+  object TabControl1: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 384.000000000000000000
+    Size.Height = 471.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 1
+    TabPosition = None
+    Sizes = (
+      384s
+      471s
+      384s
+      471s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Conectado em SALA 1'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object btnSala1: TButton
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 23.000000000000000000
+        Position.Y = 78.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 81.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'SALA 1'
+        OnClick = btnSala1Click
+      end
+      object btnSala2: TButton
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 23.000000000000000000
+        Position.Y = 182.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 81.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'SALA 2'
+        OnClick = btnSala2Click
+      end
+      object btnSala3: TButton
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 23.000000000000000000
+        Position.Y = 286.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 81.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'SALA 3'
+        OnClick = btnSala3Click
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Enabled = False
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Caption Tab Item #2'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object lbChat: TListBox
+        Align = Top
+        Enabled = False
+        Size.Width = 384.000000000000000000
+        Size.Height = 225.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 384.000000000000000000
+        Viewport.Height = 225.000000000000000000
+      end
+      object Panel1: TPanel
+        Align = Top
+        Position.Y = 233.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object edtMensagem: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 0
+          Enabled = False
+          Size.Width = 311.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object btnEnviar: TButton
+          Align = Right
+          Enabled = False
+          Position.X = 311.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Enviar'
+          OnClick = btnEnviarClick
+        end
+      end
+      object Panel2: TPanel
+        Align = Top
+        Position.Y = 225.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+      end
+    end
+  end
+  object BottomToolBar: TToolBar
+    Align = Bottom
+    Anchors = [akLeft]
+    Position.Y = 519.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 2
+    object lblStatus: TLabel
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 10.000000000000000000
+      TextSettings.HorzAlign = Center
+      TabOrder = 4
+    end
+  end
+  object ActionList: TActionList
+    Left = 176
+    Top = 56
+    object Sair: TPreviousTabAction
+      Category = 'Tab'
+      TabControl = TabControl1
+      ShortCut = 137
+    end
+    object Sala: TNextTabAction
+      Category = 'Tab'
+      TabControl = TabControl1
+      CustomText = 'SALA'
+    end
+    object TitleAction: TControlAction
+      Category = 'Tab'
+      Text = 'TitleAction'
+      OnUpdate = TitleActionUpdate
+    end
+  end
+end

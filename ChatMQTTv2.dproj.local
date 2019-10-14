@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/10/12 07:58:38.000.936,C:\teste2\HeaderFooterFormwithNavigation.fmx=C:\teste2\uMain.fmx</Transaction>
+    <Transaction>2019/10/12 07:58:38.000.936,C:\teste2\HeaderFooterFormwithNavigation.pas=C:\teste2\uMain.pas</Transaction>
+    <Transaction>2019/10/12 07:58:48.000.311,C:\teste2\HeaderFooterNavigation.dproj=C:\teste2\ChatMQTTv2.dproj</Transaction>
+    <Transaction>2019/10/14 10:18:03.165,=C:\Teste2\Unit2.pas</Transaction>
+    <Transaction>2019/10/14 10:18:13.487,C:\Teste2\uOSVersionAndLocale.pas=C:\Teste2\Unit2.pas</Transaction>
+    <Transaction>2019/10/14 10:19:11.424,C:\Teste2\uOSVersionAndLocale.pas=</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="2b65f475493f7ece"/>
+	</ActiveMobileDevice>
+</BorlandProject>
