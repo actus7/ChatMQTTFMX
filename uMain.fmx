@@ -9,7 +9,7 @@ object frmMain: TfrmMain
   FormFactor.Devices = [Desktop]
   OnCreate = FormCreate
   OnClose = FormClose
-  DesignerMasterStyle = 3
+  DesignerMasterStyle = 0
   object TopToolBar: TToolBar
     Anchors = []
     Size.Width = 384.000000000000000000
@@ -125,8 +125,8 @@ object frmMain: TfrmMain
         DefaultItemStyles.ItemStyle = ''
         DefaultItemStyles.GroupHeaderStyle = ''
         DefaultItemStyles.GroupFooterStyle = ''
-        Viewport.Width = 384.000000000000000000
-        Viewport.Height = 225.000000000000000000
+        Viewport.Width = 380.000000000000000000
+        Viewport.Height = 221.000000000000000000
       end
       object Panel1: TPanel
         Align = Top
@@ -141,7 +141,7 @@ object frmMain: TfrmMain
           TabOrder = 0
           Enabled = False
           Size.Width = 311.000000000000000000
-          Size.Height = 32.000000000000000000
+          Size.Height = 31.000000000000000000
           Size.PlatformDefault = False
         end
         object btnEnviar: TButton
